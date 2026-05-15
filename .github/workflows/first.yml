@@ -1,13 +1,13 @@
-name: My First Pipeline
+name: My First Pipeline #name 
 
-on: push
+on: push #trigger
 
 jobs:
-  output-message:
-    runs-on: ubuntu-latest
+  output-message: 
+    runs-on: ubuntu-latest  
 
     steps:
-      - name: Checkout code
+      - name: Checkout code    # - denotes item in list
         uses: actions/checkout@v5
 
       - name: Print a message
